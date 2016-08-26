@@ -1,0 +1,457 @@
+#main {
+    /*height:145px;*/
+    margin-bottom: -110px;
+}
+
+#w-link {
+    text-decoration: none;
+}
+
+.wiki {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 80%;
+}
+
+.reddit {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 80%;
+}
+
+.cover {
+    background-size: cover !important;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+hr,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+hgroup {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.ht--img,
+.rdt--img {
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, rgba(255, 0, 132, 0.9)));
+    background: -webkit-linear-gradient(top, #fafafa 0%, rgba(255, 0, 132, 0.9) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 0, 132, 0.7) 100%);
+}
+
+.bullets {
+    color: #fff;
+    text-align: left;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+#ht--title,
+#rdt--title {
+    font-size: 16pt;
+    line-height: 1em;
+}
+
+.box a,
+.box a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+}
+
+#list_container {
+    display: inline-block;
+}
+
+body,
+div,
+td,
+button {
+    font-family: Calibri, "Helvetica Neue";
+}
+
+body {
+    background: url(bg10.png);
+    background-position: top center;
+    background-repeat-y: inherit;
+    font-family: Arial;
+    color: #fff;
+    overflow-x:hidden;
+}
+
+a,
+a:visited {
+    color: #fff;
+    cursor: pointer;
+}
+
+.post {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.post:hover {
+    font-weight: bold;
+}
+
+.logo {
+    text-align: center;
+    width: 450px;
+}
+
+.htv {
+    text-align: center;
+    width: 500px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*max-width:690px*/
+
+@media(max-width:802px) {
+    /* #pandacorn-container {
+        display: none;
+    }*/
+}
+
+@media(max-width:750px) {
+    #list_container {
+        margin-top: -168px;
+    }
+    #main {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:801px) {
+    #main {
+        margin-bottom: 20px;
+    }
+    #list_container {
+        margin-top: -120px;
+    }
+}
+
+@media (max-width: 768px) {
+    #main {
+        margin-bottom: 40px;
+    }
+    .logo {
+        width: 330px;
+    }
+    .htv {
+        width: 450px;
+        position: relative;
+        top: -60px;
+    }
+}
+
+@media (max-width:400px) {
+    .htv {
+        left: -25px;
+    }
+}
+
+.item {
+    padding-top: 40px;
+}
+
+.box {
+    cursor: pointer;
+    background: #fff;
+    width: 263px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+#first,
+#second {
+    font-size: 23pt;
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.link--helloworld {
+    color: #fff;
+    font-size: 22pt;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+}
+
+img,
+li {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Cloud Animation*/
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-webkit-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-moz-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-ms-keyframes move-clouds-back {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 430px;
+    display: block;
+}
+
+.clouds-night {
+    background: transparent url(clouds4-night.png) repeat-x top center;
+    z-index: -300;
+    -moz-animation: move-clouds-back 200s linear infinite;
+    -ms-animation: move-clouds-back 200s linear infinite;
+    -o-animation: move-clouds-back 200s linear infinite;
+    -webkit-animation: move-clouds-back 200s linear infinite;
+    animation: move-clouds-back 200s linear infinite;
+    opacity: 0.7;
+}
+
+.clouds-day {
+    background: transparent url(clouds4.png) repeat-x top center;
+    z-index: -300;
+    -moz-animation: move-clouds-back 200s linear infinite;
+    -ms-animation: move-clouds-back 200s linear infinite;
+    -o-animation: move-clouds-back 200s linear infinite;
+    -webkit-animation: move-clouds-back 200s linear infinite;
+    animation: move-clouds-back 200s linear infinite;
+    opacity: 0.7;
+}
+
+
+/*End Clouds*/
+
+
+/*Pandacorn*/
+
+#pandacorn-container {
+    height: 60px;
+    /*for reddit container*/
+    /*margin-bottom:150px;*/
+}
+
+#pandacorn {
+    height: 400px;
+    position: relative;
+    top: -125px;
+    left: -140px;
+    z-index: 3000;
+    display: block;
+}
+
+
+/*End Pandacorn*/
+
+
+/*Forecast app*/
+
+#forecast-container {
+    /*  width: 300px;
+    height: 180px;*/
+    color: #fff;
+    /* padding: 10px;*/
+    line-height: 2em;
+    height:100px;
+    /*text-align:center;*/
+}
+
+#currWeatherLoc {
+    letter-spacing: 1.7px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#forecast {
+    padding-left: 20px;
+    height:100px;
+}
+
+#wu-container {
+    position: relative;
+    top: 99px;
+    right: -40px;
+    margin-bottom: 102px;
+    height:100px;
+}
+
+#wu-power {
+    font-size: 10px;
+}
+
+#weatherInfo {
+    position: relative;
+    top: -100px;
+    font-weight: normal;
+}
+
+#wu-power {
+    position: relative;
+    top: -84px;
+    right: 3px;
+}
+
+#wuLogo {
+    padding-left: 10px;
+    width: 20px;
+    position: relative;
+    top: 6px;
+    left: -2px;
+}
+
+#currWeatherImg {
+    position: relative;
+    right: 95px;
+    width: 80px;
+    top: 4px;
+}
+
+#currTemp {
+    position: relative;
+    left: -12px;
+    top: 20px;
+    font-size: 30px;
+}
+
+
+/*@media( max-width:1080px){
+    forecast-container{
+        display:none;
+    }
+}*/
+
+
+/*end forecast app*/

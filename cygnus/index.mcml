@@ -1,0 +1,37 @@
+#!/usr/bin/perl -w
+my $output='indexapi.jsonpResponse (
+{
+"cur": "USD",
+"seatbid": [
+{
+"bid": [
+{
+"impid": "0",
+"adid": "1487603",
+"adomain": [
+"58371"
+],
+"id": "1",
+"price": 0.01,
+"ext": {
+"vasturl": "/pcreative?au=B&c=157D&pcid=124FD0013700&pr=64&r=834BD002&s=1&t=386D89D0&u=VlJXcnlnb0ZQZ29BQUJKV0hGSUFBQUFB&m=0887aff6f1fbe25341e6c1e589664093&wp=3E8&cp=10.00&aid=ED8DA3C1E1123001&tid=0&dm=64&d=&n=dfp.example.com&sid=83&epr=index_34&unk1=htv",
+"errorurl": "http://as.casalemedia.com/vnotify?c=&r=&t=&u=&m=&wp=3E8&aid=&tid=&s=&cp=10.00&n=&pr=&dm=&et=0&erc=[ERRORCODE]&epr=",
+"dspid": 46,
+"pricelevel": "_1",
+"advbrandid": 25661,
+"advbrand": "LA Tourism & Convention Board"
+}
+}
+],
+"seat": "2439"
+}
+],
+"id": "REQ_ID"
+}
+)';
+$ENV{REQUEST_URI} =~ s/.*r=%7B%22id%22%3A%22//;
+$ENV{REQUEST_URI} =~ s/%22.*//;
+print $ENV{REQUEST_URI};
+$output =~ s/REQ_ID/$ENV{REQUEST_URI}/;
+print "Content-type: application/javascript\n\n";
+print $output;

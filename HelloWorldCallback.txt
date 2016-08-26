@@ -1,0 +1,26 @@
+function cygnus_index_ready_state() {
+    var slots_O = new Array();
+    var slots_P = new Array();
+    var cygnus_rb = new Array();
+    for (var i = 0; i < index_slots.length; i++) {
+        var index_params = index_slots[i].split('_');
+        var op = index_params.shift();
+        var k = op;
+        var v = index_params.join('_');
+        if (k == 'O') {
+            slots_O.push(v);
+        } else if (k == 'P') {
+            slots_P.push(v);
+        }
+        cygnus_log('key:' + k + ' val:' + v);
+        cygnus_rb.push(index_slots[i]);
+    }
+    if (slots_O.length > 0) {
+        googletag.pubads().setTargeting('IOM', slots_O);
+        index_targets['O'] = slots_O;
+    }
+    if (slots_P.length > 0) {
+        googletag.pubads().setTargeting('IPM', slots_P);
+        index_targets['P'] = slots_P;
+    }
+}

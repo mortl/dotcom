@@ -1,0 +1,12 @@
+<!-- Render Creative -->
+<script type="text/javascript">
+var index_slot   = '1';
+var index_values = '%%PATTERN:IOM%%';
+
+// unpack px
+var index_ary    = index_values.split( ',' );
+for ( var i=0; i < index_ary.length; i++ )
+{var unpack = index_ary[i].split( '_' );
+if ( unpack[0] == index_slot ){
+window.top.index_render( document, index_ary[i] );}}
+</script>
